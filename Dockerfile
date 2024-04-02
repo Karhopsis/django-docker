@@ -11,3 +11,4 @@ RUN adduser --disabled-password service-user
 USER service-user
 
 
+sdawdwa
