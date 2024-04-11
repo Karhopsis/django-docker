@@ -76,7 +76,7 @@ services:
       context: .
     hostname: flower
     entrypoint: celery
-    command: -A celery_app.app flower
+    command: -A celery_app.app flower --loglevel=info
     volumes:
       - ./service:/service
     links:
