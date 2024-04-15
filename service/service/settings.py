@@ -29,6 +29,8 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# sudo docker-compose run --rm web-app sh -c "pip install -r requirements/benchmark.txt"
+# cd Users/Yaryk1488/Desktop/django-docker
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,8 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+
     "services",
     "clients",
+    "cachalot",
 ]
 
 MIDDLEWARE = [
@@ -150,6 +154,8 @@ CACHES = {
 
         }
     }
+
+
 
 
 CELERY_BROKER_URL='redis://redis:6379/0'

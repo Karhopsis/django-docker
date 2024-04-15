@@ -10,6 +10,8 @@ RUN pip install -r /temp/requirements.txt
 
 RUN adduser --disabled-password service-user
 
+RUN APK pk add --no-cache redis
+
 USER service-user
 
 
